@@ -10,9 +10,9 @@ docker-compose build && docker-compose up -d
 [destroy]
 docker-compose down
 
-[docker-compose run --rm][npm|composer]['command']
-docker-compose run --rm npm -v
-docker-compose run --rm composer -v
+[docker-compose run --rm][npm|composer]['command']<br>
+docker-compose run --rm npm -v<br>
+docker-compose run --rm composer -v<br>
 
 [docker-compose exec php]['command']
 docker-compose exec php php artisan
