@@ -16,8 +16,8 @@ services:
       - ./src:/var/www/html
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
-      - myphp2
-      - mysql2
+      - php
+      - mysql
     networks:
       - laravel
 
@@ -60,7 +60,7 @@ services:
     image: phpmyadmin/phpmyadmin:latest
     container_name: myadmin
     depends_on:
-      - mysql2
+      - mysql
     ports:
       - "8899:80"
     environment:

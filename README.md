@@ -6,7 +6,7 @@ Wordpress : Bikin folder public dalam folder src masukin project wordpressnya.<b
 ## Penggunaan
 
 **[startup]**<br>
-docker-compose build && docker-compose up -d<br>
+docker-compose up -d --build<br>
 **[destroy]**<br>
 docker-compose down<br>
 
