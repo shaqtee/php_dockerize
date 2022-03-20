@@ -66,6 +66,7 @@ services:
     environment:
       PMA_HOST: mysql2
       MYSQL_ROOT_PASSWORD: secret
+      UPLOAD_LIMIT: 64M
     networks:
       - laravel
 
